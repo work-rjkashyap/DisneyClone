@@ -1,3 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gandhi;
+  src: url('/font/GandhiSans-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --fresh: #4abdac;
+  --vermillion: #fc4a1a;
+  --sunshine: #f7b733;
+  --clean: #dfdce3;
+}
+
+@layer base {
+  body {
+    @apply font-Lato;
+  }
+}
+@layer components {
+  .link-btn {
+    @apply m-4 cursor-pointer;
+  }
+  .logo {
+    @apply cursor-pointer mr-3;
+  }
+  .navbar-items {
+    @apply sticky bg-[#111724] top-0 z-[1000] flex h-[72px] justify-between items-center px-1 md:px-9;
+  }
+  .menu-contain {
+    @apply relative inline-block text-center  link-btn;
+  }
+  .menu-button {
+    @apply inline-flex justify-center text-sm font-medium text-white;
+  }
+  .navbar-links {
+    @apply hidden  md:flex justify-start items-center h-[72px] text-[#ffffffcc] font-medium;
+  }
+  .menu-items {
+    @apply absolute -left-10 w-32 mt-2 origin-top bg-[#171f31] text-white divide-y divide-gray-100 rounded-md shadow-lg ring-0 ring-opacity-5 focus:outline-none;
+  }
+  .menu-items-2 {
+    @apply absolute -left-10 w-36 mt-2 origin-top bg-[#171f31] text-white divide-y divide-gray-100 rounded-md shadow-lg ring-0 ring-opacity-5 focus:outline-none;
+  }
+  .hamburger-menu {
+    @apply absolute  w-36 mt-2 origin-top bg-[#171f31] text-white divide-y divide-gray-100 rounded-md shadow-lg ring-0 ring-opacity-5 focus:outline-none;
+  }
+  .menu-item {
+    @apply flex rounded-md items-center justify-start w-full px-3 py-3 text-sm;
+  }
+  .menu-item-2 {
+    @apply flex rounded-md items-center justify-start w-full px-4 py-4 text-sm;
+  }
+  .Search-container {
+    @apply mt-0 bg-transparent block w-full border-b-gray-50 p-0.5 border-0 border-b-[1px] 
+                    focus:ring-0  focus:w-[290px]  origin-left focus:duration-200 focus:transition-all 
+                    focus:ease-in;
+  }
+  .search-box {
+    @apply flex justify-around items-center h-[72px] float-right text-[#ffffffcc] font-medium;
+  }
+}
+
 html,
 body {
   padding: 0;
