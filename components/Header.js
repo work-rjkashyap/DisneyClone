@@ -627,7 +627,7 @@ function Header() {
         </div>
       </div>
       <div className=" flex justify-around items-center">
-        <div class="search-box">
+        <div className="search-box">
           <input
             type="text"
             className="Search-container"
