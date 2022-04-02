@@ -119,7 +119,7 @@ function Header() {
         <div className="logo">
           <Link href={'/'} passHref>
             <a>
-              <Image src="/disney-hotstar-logo.svg" height={72} width={115} />
+              <Image src="/disney-hotstar-logo.svg" alt="logo" height={72} width={115} />
             </a>
           </Link>
         </div>
@@ -622,7 +622,7 @@ function Header() {
          
           
           <a className="group link-btn">
-            <Image src={'/images/kids.svg'} height={40} width={40} />
+            <Image src={'/images/kids.svg'} alt="kids" height={40} width={40} />
           </a>
         </div>
       </div>
